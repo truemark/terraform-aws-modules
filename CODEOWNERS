@@ -1,0 +1,21 @@
+# Default repo-level ownership
+* @truemark/terraform-maintainers
+
+# Repository governance
+/.github/ @truemark/terraform-maintainers
+/CODEOWNERS @truemark/terraform-maintainers
+/README.md @truemark/terraform-maintainers
+/LICENSE @truemark/terraform-maintainers
+/version.txt @truemark/terraform-maintainers
+
+# Database-owned modules and examples
+/modules/database/ @truemark/db-warden
+/examples/database/ @truemark/db-warden
+
+# Future team areas
+/modules/networking/ @truemark/network-team
+/examples/networking/ @truemark/network-team
+/modules/security/ @truemark/security-team
+/examples/security/ @truemark/security-team
+/modules/eks/ @truemark/eks-team
+/examples/eks/ @truemark/eks-team
