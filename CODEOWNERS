@@ -1,0 +1,23 @@
+# Code ownership for pull request review requirements.
+#
+# GitHub only honors a CODEOWNERS file at the repo root, .github/, or docs/ --
+# NOT in nested module directories. All ownership rules must live here.
+#
+# Rules are evaluated last-match-wins (like .gitignore): broad/category-level
+# defaults are listed first, and more specific per-module overrides are listed
+# further down so they take precedence over the category default above them.
+
+# Default owner for anything not matched by a more specific rule below
+*                                               @truemark/harmony
+
+# Category-level defaults
+/modules/general/                              @truemark/harmony
+/modules/database/                             @truemark/db-warden
+
+# TODO: assign a real owning team and uncomment once each category is populated
+# /modules/networking/                         @truemark/<team>
+# /modules/security/                           @truemark/<team>
+# /modules/eks/                                @truemark/<team>
+
+# Per-module overrides go here, below their category default, e.g.:
+# /modules/database/<module-name>/             @truemark/<team>
